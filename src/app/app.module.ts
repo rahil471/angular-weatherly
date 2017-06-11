@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { AwListComponent } from './aw-list/aw-list.component';
 import { AwThumbnailComponent } from './aw-list/aw-thumbnail/aw-thumbnail.component';
 
+import {AwListService} from './aw-list/shared/aw-list.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,7 @@ import { AwThumbnailComponent } from './aw-list/aw-thumbnail/aw-thumbnail.compon
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [AwListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
