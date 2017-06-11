@@ -8,5 +8,5 @@
             </div>
         </div>
     </nav>
-    <app-aw-thumbnail (handleClickinParent)="handleClickinParent($event)" [city]="city"></app-aw-thumbnail>
+    <app-aw-thumbnail *ngFor="let city of cities" (handleClickinParent)="handleClickinParent($event)" [city]="city"></app-aw-thumbnail>
 </div>
