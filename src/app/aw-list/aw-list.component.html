@@ -8,21 +8,5 @@
             </div>
         </div>
     </nav>
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <div class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img class="media-object" src="http://openweathermap.org/img/w/{{city.weather[0].icon}}.png" alt="" style="max-width: 50px;">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">{{city.name}}, {{city.sys.country}}</h4>
-                    <h4><span class="label label-primary">{{city.main.temp}}°С</span></h4>
-                    <span>{{city.weather[0].main}}, {{city.weather[0].description}}</span><br>
-                    <span>Geo coords [ {{city.coord.lon}}, {{city.coord.lat}} ]</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-aw-thumbnail (handleClickinParent)="handleClickinParent($event)" [city]="city"></app-aw-thumbnail>
 </div>

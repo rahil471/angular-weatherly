@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AwListComponent } from './aw-list/aw-list.component';
+import { AwThumbnailComponent } from './aw-list/aw-thumbnail/aw-thumbnail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    AwListComponent
+    AwListComponent,
+    AwThumbnailComponent
   ],
   imports: [
     BrowserModule,

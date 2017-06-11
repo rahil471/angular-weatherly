@@ -54,4 +54,7 @@ export class AwListComponent implements OnInit {
     }
   }
 
+  handleClickinParent(city){
+    console.log(city)
+  }
 }
